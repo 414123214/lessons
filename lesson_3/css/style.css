@@ -1,0 +1,35 @@
+@import url(reset.css);
+
+a {
+	color: rgb(104, 136, 224);
+}
+
+ul > li > a{
+	color: rgb(181, 202, 88);
+}
+
+[href *= mailto] {
+	color: rgb(233, 147, 147);
+}
+
+div p {
+	color: rgb(168, 233, 184);
+}
+
+h2 + p {
+	color: rgb(231, 133, 199);
+}
+img ~ p{
+	color: rgb(214, 188, 118);
+}
+
+#pink {
+	color: rgb(207, 102, 181);
+}
+
+.footer__contacts.contacts {
+	color: rgb(73, 184, 169);
+}
+.history * {
+color: rgb(17, 109, 33);
+}
