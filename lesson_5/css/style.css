@@ -49,6 +49,9 @@ padding: 50px;
 }
 .purpose-article {
 }
+.purpose-article__title {
+	max-width: 400px;
+}
 .purpose-article__body {
 }
 .failures-article__body {
@@ -86,6 +89,9 @@ padding: 50px;
 	max-width: 100%;
 }
 .failures-article {
+}
+.failures-article__title {
+	max-width: 605px;
 }
 .failures-article__images {
 	margin: 0 0 80px 0;
