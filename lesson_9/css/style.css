@@ -41,9 +41,6 @@ background: #F16767;
 [class*='__item']:hover img, .img:hover {
 	transform: scale(1.2);
 }
-.circle img {
-	border-radius: 50%;
-}
 
 .container {
 	max-width: 1200px;
@@ -134,6 +131,9 @@ padding: 35px 0;
 }
 .content-images__item img, .img {
 	border-radius: 15px;
+}
+.circle img {
+	border-radius: 50%;
 }
 .footer {
 }
