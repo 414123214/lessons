@@ -1,0 +1,231 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+body {
+	font-family: "Inter", sans-serif;
+}
+h2 {
+	font-weight: 700;
+	font-size: 25px;
+	color: #2e2e2e;
+	margin-bottom: 25px;
+}
+.wrapper {
+	padding: 50px 0;
+	background-color: #DDF7E3;
+	overflow: clip;
+	min-height: 100%;
+}
+.header {
+}
+.page {
+}
+.content:not(:last-child) {
+	margin-bottom: 50px;
+}
+.content__container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.content__block {
+}
+/* .content__block > div{
+	position: relative;
+} */
+/* .content__block > div::before {
+	content: "";
+	background: #000000ac;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+} */
+.content__block div{
+	width: 250px;
+	height: 250px;
+	margin-bottom: 15px;
+	transition: all 2s ease-in-out;
+}
+.content__block div:hover{
+/* opacity: 0.8; */
+}
+.content__translate-scale {
+background: #0F6292;
+}
+.content__translate-scale:hover {
+	transform: scale(1.2, 1.2) translateX(-50%);
+	background: #0f6292e0;
+}
+.content__rotate-skew {
+	background: #C92C6D;
+	transition: all 200ms;
+}
+.content__rotate-skew:hover {
+	transform: rotate(-90deg) skew(5deg, 15deg);
+}
+.content__matrix {
+	position: relative;
+	background: #2E4F4F;
+}
+.content__matrix:hover {
+	transform: matrix(1.2, -2, 0, 1.2, 0, 0);
+}
+.content__transform-origin {
+	transform-origin: 0 0;
+	background: #E21818;
+}
+.content__transform-origin:hover {
+	transform: rotate(35deg);
+}
+.content__wrapper {
+	background: #49494977;
+	transition: all 2s;
+	perspective: 700px;
+}
+/* .content__wrapper:hover {
+	perspective: 70px;
+} */
+.content__perspective {
+	background: #4E6E81;
+}
+.content__perspective:hover {
+	transform: rotateY(20deg);
+}
+.content__translate3d-scale3d {
+	background: #BFDB38;
+}
+.content__translate3d-scale3d:hover {
+	transform: translate3d(300px, 0, 15px) scale3d(1.2, 1.2, 1);
+}
+.content__rotate3d {
+	background: #E98EAD;
+}
+.content__rotate3d:hover {
+	transform: rotate3d(1, 0, 1, 30deg);
+}
+.content__matrix3d {
+	background: #3C2A21;
+}
+.content__matrix3d:hover {
+	transform: matrix3d(1,0,0.00,0,0.00,-1,0.00,0,0,0,-1,0,50,0,0,1);
+}
+.content__wrapper {
+}
+.content__wrapper_preserve-3d {
+		transform-style: preserve-3d;
+		perspective: 200px;
+}
+.content__block .content__wrapper_preserve-3d:hover {
+	opacity: 1;
+}
+.content__transform-style {
+	background: #00FFF6;
+}
+.content__transform-style:hover {
+	transform: rotateX(3deg);
+}
+.content__flip-card {
+}
+.flip-card {
+	perspective: 300px;
+	background: transparent;
+	transform-style: preserve-3d;
+}
+.flip-card img{
+	max-width: 100%;
+	object-fit: contain;
+	backface-visibility: hidden;
+}
+.flip-card__body {
+	position: relative;
+	transform-style: preserve-3d;
+}
+.flip-card__front, .flip-card__back {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.flip-card__front {
+	transform: rotateY(0deg);
+	z-index: 2;
+	backface-visibility: hidden;
+}
+.flip-card__back {
+	z-index: 1;
+	transform: rotateY(180deg);
+}
+.flip-card:hover .flip-card__body{
+	transform: rotateY(180deg);
+}
+.actions {
+	width: 100%;
+	height: 800px;
+	position: relative;
+	overflow: clip;
+}
+.actions__background {
+	background: url(../img/01.webp) bottom / cover no-repeat;
+	width: 100%;
+	height: 100%;
+}
+.actions__background::after {
+	position: absolute;
+	z-index: 5;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: url(../img/03.gif) 0 0 / cover no-repeat;
+}
+.actions__car {
+	position: absolute;
+	z-index: 6;
+	bottom: -150px;
+	left: 50%;
+	transform: translateX(1000%);
+	transition: all 2s cubic-bezier(.5,1.08,.98,.99);
+}
+.car {
+}
+.car__img img {
+	max-width: 500px
+}
+.car__img::before {
+	position: absolute;
+	z-index: 2;
+	top: 210px;
+	left: -380px;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-bottom: 80px solid transparent;
+	border-left: 400px solid #BFDB38;
+	opacity: 0.4;
+}
+.car__link {
+	display: block;
+	position: absolute;
+	color: #444444;
+	font-size: 18px;
+	top: 230px;
+	left: 180px;
+	background: #F39C12;
+	border-radius: 15px;
+	border: 3px solid #444444;
+	padding: 5px;
+	z-index: 7;
+	transition: all 400ms;
+}
+.car__link:hover {
+	background: #444444;
+	border: 3px solid #F39C12;
+	color: #F39C12;
+}
+.actions:hover .actions__car {
+	transform: translateX(-50%);
+}
