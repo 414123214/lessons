@@ -207,7 +207,11 @@ margin: 0 -16px 81px;
 }
 .text-block__date {
 }
-.text-block__author {
+.text-block__author a{
+	transition: color 150ms;
+}
+.text-block__author a:hover{
+	color: #d5752c;
 }
 /* -------------------------------------------------- */
 .article__images {
