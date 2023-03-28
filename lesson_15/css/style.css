@@ -349,6 +349,9 @@ padding-bottom: 42.75%;
 	.article__img:not(:last-child) {
 		margin-bottom: 60px;
   }
+  .title-large {
+	font-size: 47px;
+}
 }
 @media (max-width: 880px) {
 	.achievements__item {
@@ -412,6 +415,9 @@ padding-bottom: 42.75%;
 	}
 	.images-article__img:nth-child(3n) .img__wrapper{
 		padding-bottom: 87.6923%;
+	}
+	.title-large {
+		font-size: 42px;
 	}
 }
 @media (max-width: 450px) {
