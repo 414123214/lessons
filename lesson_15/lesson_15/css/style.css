@@ -1,0 +1,437 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+main {
+	flex-grow: 1;
+}
+body {
+	font-size: 18px;
+	line-height: 1.6;
+	font-family: "Poppins", sans-serif;
+}
+[class*="container"]{
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.page {
+}
+.page__achievements {
+}
+.achievements {
+	padding: 100px 0;
+}
+.achievements__container {
+}
+.achievements__title {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+}
+.achievements__title::after {
+	content: "";
+	margin-left: 26px;
+	/* display: inline-block; */
+	height: 2px;
+	background: #000;
+	flex: 0 1 464px;
+}
+.achievements__title:not(:last-child) {
+	margin-bottom: 40px;
+}
+.achievements__items {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+}
+.achievements__item {
+	display: flex;
+	column-gap: 10%;
+}
+.item {
+}
+.item__img {
+	flex: 0 0 62.166%;
+	display: block;
+	overflow: clip;
+}
+.img-item {
+}
+.img-item__wrapper {
+	position: relative;
+	padding-bottom: 48.927%;
+}
+.item__img img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 315ms;
+}
+.item__body {
+	flex: 0 0 27.834%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	align-self: center;
+}
+.item__title {
+transition: color 40ms;
+}
+.title {
+	font-weight: 600;
+font-size: 24px;
+line-height: 1.4;
+color: #333333;
+}
+.item__title:hover {
+	color: #d5752c;
+}
+.item__title h4:after {
+	content: "";
+	display: block;
+	height: 2px;
+	background: #d5752c;
+	opacity: 0;
+	/* visibility: hidden; */
+	width: 0px;
+	transition: opacity 200ms, width 300ms;
+}
+
+.item__title h4 {
+	display: inline-block;
+}
+.item__text {
+}
+.text {
+	color: #9C9C9C;
+}
+
+.page__article {
+}
+.article {
+	padding: 100px 0;
+}
+.article__container {
+	display: flex;
+	flex-direction: column;
+}
+.article__body {
+	display: flex;
+	flex-direction: column;
+}
+
+.article__title-large {
+}
+.article__title-large:not(:last-child) {
+	margin-bottom: 30px;
+}
+.title-large {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.4;
+	margin: 0 auto;
+	text-align: center;
+}
+.article__subtitle {
+}
+.article__subtitle:not(:last-child) {
+	margin-bottom: 53px;
+}
+.subtitle {
+	max-width: 520px;
+	margin: 0 auto;
+	text-align: center;
+}
+.article__img {
+}
+.article__img:not(:last-child) {
+	margin-bottom: 100px;
+}
+.article__img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.article__text-block {
+margin: 0 -16px 81px;
+}
+.text-block {
+	display: flex;
+	color: #9C9C9C;
+}
+.text-block__element {
+	flex: 0 0 50%;
+	display: flex;
+}
+.element {
+}
+.element__inner {
+	padding: 0 16px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+}
+.text-block__title {
+}
+.text-block__title:not(:last-child) {
+	margin-bottom: 24px;
+}
+.title {
+}
+.text-block__text {
+	flex: 1 1 auto;
+}
+.text-block__text p:not(:last-child){
+	margin-bottom: 30px;
+}
+.text-block__text:not(:last-child){
+	margin-bottom: 45px;
+}
+.text-block__footer {
+	display: flex;
+	column-gap: 80px;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.text-block__date {
+}
+.text-block__author a{
+	transition: color 150ms;
+}
+.text-block__author a:hover{
+	color: #d5752c;
+}
+/* -------------------------------------------------- */
+.article__images {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 32px;
+	margin: 0 -16px;
+}
+.images-article {
+}
+.img {
+}
+.images-article__img {
+	flex: 0 0 50%;
+	position: relative;
+	padding: 0 16px;
+}
+.images-article__img {
+}
+.images-article__img img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 315ms;
+}
+.images-article__img:nth-child(3n) {
+	flex: 0 0 100%;
+}
+.images-article__img:nth-child(3n) .img__wrapper{
+padding-bottom: 42.75%;
+}
+.img__wrapper {
+	position: relative;
+	padding-bottom: 87.6923%;
+	overflow: clip;
+	display: block;
+}
+
+.article__cards {
+}
+@media (any-hover: hover) {
+	.item__img:hover img{
+		transform: scale(1.037);
+		}
+	.item__title:hover h4::after {
+			opacity: 1;
+			/* visibility: visible; */
+			width: 100%;
+		}
+		.img__wrapper:hover img {
+			transform: scale(1.037);
+		}
+}
+@media (max-width: 1080px) {
+	.article__images {
+		margin: 0 -10px;
+		row-gap: 20px;
+	}
+	.images-article__img {
+		padding: 0 10px;
+	}
+}
+@media (max-width: 1050px) {
+	.achievements__item {
+		column-gap: 7%;
+	}
+	.item__body {
+		flex: 0 0 30.834%;
+	}
+	.article__title-large:not(:last-child) {
+		margin-bottom: 22px;
+	}
+	.article__subtitle:not(:last-child) {
+		margin-bottom: 45px;
+	}
+	.article__img:not(:last-child) {
+		margin-bottom: 78px;
+	}
+	.text-block__text p:not(:last-child){
+		margin-bottom: 28px;
+	}
+	.article__text-block {
+		margin: 0 -15px 70px;
+		}
+	.text-block__text:not(:last-child){
+		margin-bottom: 35px;
+	}
+	.article__text-block {
+		margin: 0 -11px 70px;
+		}
+		.element__inner {
+			padding: 0 11px;
+		}
+		.article {
+			padding: 75px 0;
+		}
+		.achievements {
+			padding: 75px 0;
+		}
+}
+@media (max-width: 991.98px) {
+	.article {
+		padding: 57px 0;
+	}
+	.achievements {
+		padding: 57px 0;
+	}
+	.achievements__item {
+		column-gap: 5%;
+	}
+	.item__body {
+		flex: 0 0 32.834%;
+	}
+	.title-large {
+		font-size: 52px;
+	}
+}
+@media (max-width: 820px) {
+	.text-block {
+		flex-direction: column;
+		row-gap: 40px;
+	}
+	.text-block__title {
+		margin: 0 auto;
+	}
+	.text-block__footer {
+		column-gap: 40px;
+		justify-content: space-between;
+	}
+	.article__subtitle:not(:last-child) {
+		margin-bottom: 33px;
+	}
+	.article__title-large:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	.article__img:not(:last-child) {
+		margin-bottom: 60px;
+  }
+  .title-large {
+	font-size: 47px;
+}
+}
+@media (max-width: 880px) {
+	.achievements__item {
+		flex-direction: column;
+		row-gap: 35px;
+	}
+	.achievements__title:not(:last-child) {
+		margin-bottom: 35px;
+	}
+	.achievements__items {
+		row-gap: 30px;
+	}
+}
+@media (max-width: 600px) {
+	body {
+		font-size: 16px;
+	}
+	/* .achievements__title::after{
+		display: none;
+	} */
+	.item__title {
+		font-size: 21px;
+	}
+	.achievements__item {
+		row-gap: 27px;
+	}
+	.achievements__title:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	.item__body {
+		row-gap: 15px;
+	}
+	.article__subtitle:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	.article__title-large:not(:last-child) {
+		margin-bottom: 18px;
+	}
+	.article__img:not(:last-child) {
+		margin-bottom: 40px;
+  }
+  .article__images {
+	margin: 0 -7.5px;
+	row-gap: 15px;
+}
+.images-article__img {
+	padding: 0 7.5px;
+}
+}
+@media (max-width: 519.98px) {
+	.article__images {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.images-article__img {
+		/* min-height: 250px; */
+		flex: 0 0 100%;
+	}
+	.images-article__img:nth-child(3n) {
+		
+	}
+	.images-article__img:nth-child(3n) .img__wrapper{
+		padding-bottom: 87.6923%;
+	}
+	.title-large {
+		font-size: 42px;
+	}
+}
+@media (max-width: 450px) {
+	.achievements__title:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	.achievements__items {
+		row-gap: 25px;
+	}
+	.item__body {
+		row-gap: 12px;
+	}
+}
